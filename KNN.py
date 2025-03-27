@@ -86,3 +86,56 @@ for i in range(5):  # Check first 5 test samples
     print(f"Test Data: {test_data[i]}")
     print(f"Actual Label: {test_labels[i]}")
     print(f"Neighbors: {neighbors}")
+
+
+#output
+Index:   0, features: [5.1 3.5 1.4 0.2], label: 0
+Index:  79, features: [5.7 2.6 3.5 1.0], label: 1
+Index:  99, features: [5.7 2.8 4.1 1.3], label: 1
+Index: 101, features: [5.8 2.7 5.1 1.9], label: 2
+
+The first samples of our learn set:
+index   data                 label
+   0   [5.8 2.7 5.1 1.9]     2
+   1   [5.1 3.5 1.4 0.2]     0
+   2   [6.3 2.8 5.1 1.5]     2
+   3   [5.5 4.2 1.4 0.2]     0
+   4   [6.7 3.3 5.7 2.5]     2
+
+The first samples of our test set:
+index   data                 label
+   0   [5.1 3.8 1.6 0.2]     0
+   1   [5.0 3.4 1.6 0.4]     0
+   2   [6.7 3.3 5.7 2.5]     2
+   3   [6.3 2.5 5.0 1.9]     2
+   4   [5.7 2.8 4.1 1.3]     1
+#Diagram graph
+
+#Finding nearest neighbour
+Index: 0
+Testset Data: [5.1 3.8 1.6 0.2]
+Testset Label: 0
+Neighbors: [
+  ([5.1 3.5 1.4 0.2], 0.316, 0),
+  ([5.0 3.4 1.6 0.4], 0.412, 0),
+  ([4.9 3.0 1.4 0.2], 0.824, 0)
+]
+
+Index: 1
+Testset Data: [5.0 3.4 1.6 0.4]
+Testset Label: 0
+Neighbors: [
+  ([5.1 3.5 1.4 0.2], 0.223, 0),
+  ([5.1 3.8 1.6 0.2], 0.412, 0),
+  ([4.9 3.0 1.4 0.2], 0.655, 0)
+]
+
+Index: 2
+Testset Data: [6.7 3.3 5.7 2.5]
+Testset Label: 2
+Neighbors: [
+  ([6.7 3.1 5.6 2.4], 0.141, 2),
+  ([6.3 2.8 5.1 1.5], 1.019, 2),
+  ([6.8 3.2 5.9 2.3], 0.223, 2)
+]
+
