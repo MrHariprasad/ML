@@ -30,3 +30,9 @@ conditional_probability_single_given_med_risk = (
 # Output results
 print(f"Unconditional Probability of 'golf': {unconditional_probability_golf:.2f}")
 print(f"Conditional Probability of 'single' given 'med Risk': {conditional_probability_single_given_med_risk:.2f}")
+
+
+#output
+Unconditional Probability of 'golf': 0.40
+Conditional Probability of 'single' given 'med Risk': 0.33
+
