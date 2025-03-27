@@ -45,3 +45,13 @@ plt.xlabel("VAR1")
 plt.ylabel("VAR2")
 plt.legend()
 plt.show()
+
+
+#output
+Centroids:
+[[0.33066667, 1.60833333]
+ [1.26633333, 0.45466667]
+ [1.30633333, 1.41933333]]
+Predicted Cluster Index: 1
+Predicted Class for new point (VAR1=0.906, VAR2=0.606): 1
+
