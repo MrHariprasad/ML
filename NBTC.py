@@ -56,3 +56,12 @@ plt.show()
 
 # Print the accuracy score
 print("The accuracy is {}".format(accuracy_score(test_data.target, predicted_categories)))
+
+
+#output
+NAIVE BAYES ENGLISH TEST CLASSIFICATION
+We have 20 unique classes
+We have 11314 training samples
+We have 7532 test samples
+['rec.autos' 'sci.crypt' 'alt.atheism' ... 'rec.sport.baseball'
+ 'comp.sys.ibm.pc.hardware' 'soc.religion.christian']
